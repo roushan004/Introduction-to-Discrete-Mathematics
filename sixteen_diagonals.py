@@ -83,6 +83,7 @@ def main(square, row, column, diagonals):
     #base case when there are no more diagonals to be added
     if diagonals == 0:
         print(square)
+        printer(square)
         exit()        
         
     if row == len(square):
@@ -104,7 +105,7 @@ def main(square, row, column, diagonals):
                 else:
                     main(square, row+1, 0, diagonals)
 
-#To view the square after execution copy and paste the square list into the printer function
+#To view certain square list copy and paste the square list into the printer function
 #printer( [[1, 1, 1, 1, 1], [0, 0, 0, 0, 1], [1, 0, -1, -1, 0], [1, 1, 0, -1, -1], [0, 1, 1, 0, -1]])
 
 if __name__ == "__main__":
