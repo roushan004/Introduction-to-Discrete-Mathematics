@@ -66,11 +66,11 @@ def printer(square):
         for j in range(len(square)):
             #check all three cases in current position square[i][j]
             if square[i][j] == 0:
-                print(" ", end="")
+                print("_", end=" ")
             if square[i][j] == 1:
-                print("/ ", end="")
+                print("/", end=" ")
             if square[i][j] == -1:
-                print("\\ ", end="")
+                print("\\", end=" ")
         #changeline
         print()
 
